@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções em js</title>
+</head>
+<body>
+    <h1>Você é aluno do Senac?</h1>
+    <p>Clique no botão e responda</p>
+    <button onclick="pesqaluno()">Pequisa</button>
+    <div id="retorno"></div>
+
+    <script>//colocando funções
+        function pesqaluno(){
+            var resposta = window.confirm("Olá, Você é aluno do Senac?")
+            if (resposta==true){
+                var mensagem = "Que legal... você é aluno do Senac!!!";
+            }
+            else{
+                var mensagem = "Venha fazer parte da nossa equipe!!!";
+            }
+            window.document.getElementById("retorno").innerHTML = mensagem;
+        }
+
+    </script>
+    
+</body>
+</html>
